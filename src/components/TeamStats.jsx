@@ -118,24 +118,7 @@ export function TeamStats({ homeTeam, awayTeam }) {
       format: (value) => value,
       getValue: (stats) => parseInt(stats?.personalFouls?.value || 0),
     },
-    {
-      key: 'onePointGoals',
-      label: '一分命中数',
-      format: (value) => value,
-      getValue: (stats) => parseInt(stats?.onePointGoals?.value || 0),
-    },
-    {
-      key: 'onePointAttempted',
-      label: '一分出手数',
-      format: (value) => value,
-      getValue: (stats) => parseInt(stats?.onePointAttempted?.value || 0),
-    },
-    {
-      key: 'onePointPercentage',
-      label: '一分命中率',
-      format: (value) => `${value}%`,
-      getValue: (stats) => parseFloat(stats?.onePointPercentage?.value || 0),
-    },
+   
     {
       key: 'twoPointGoals',
       label: '两分命中数',
@@ -166,30 +149,31 @@ export function TeamStats({ homeTeam, awayTeam }) {
         <div className="flex items-center gap-4">
           {/* 主队显示在左边 */}
           <div className="flex-1 flex items-center gap-2">
-            <span className="text-sm text-cba-text font-medium">
-              {config.format(homeValue)}
-            </span>
             <div className="flex-1 h-2 bg-cba-bg rounded-full overflow-hidden">
               <div
                 className="h-full bg-cba-orange transition-all duration-500"
                 style={{ width: `${homePercent}%` }}
               />
             </div>
+            <span className="text-sm text-cba-text font-medium">
+              {config.format(homeValue)}
+            </span>
           </div>
           <span className="text-xs text-cba-text-secondary min-w-[100px] text-center">
             {config.label}
           </span>
           {/* 客队显示在右边 */}
           <div className="flex-1 flex items-center justify-end gap-2">
-            <div className="flex-1 h-2 bg-cba-bg rounded-full overflow-hidden">
+            <span className="text-sm text-cba-text font-medium">
+              {config.format(awayValue)}
+            </span>
+            <div className="flex-1 h-2 bg-blue-50 rounded-full overflow-hidden">
               <div
                 className="h-full bg-cba-orange transition-all duration-500 ml-auto"
                 style={{ width: `${awayPercent}%` }}
               />
             </div>
-            <span className="text-sm text-cba-text font-medium">
-              {config.format(awayValue)}
-            </span>
+            
           </div>
         </div>
       </div>
