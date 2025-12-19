@@ -37,7 +37,7 @@ export function parseMatchList(data) {
 
       return {
         id: match.mgdbId,
-        label: `${match.keyword || ''} ${match.pkInfoTitle || ''}`.trim(),
+        label: match.pkInfoTitle || '', // 只显示球队信息，不包含时间日期
         status: match.matchStatus, // "0"=未开始, "2"=进行中/完赛
         time: match.keyword,
         title: match.pkInfoTitle,

@@ -25,6 +25,26 @@ export function MatchSelect({ matches, selectedMatch, onSelect, loading }) {
     setIsOpen(false);
   };
 
+  // 解析label，将VS用橙色显示并添加间距
+  const renderMatchLabel = (label) => {
+    if (!label) return '请选择比赛';
+    
+    // 匹配 "vs" 或 "VS"（不区分大小写）
+    const parts = label.split(/(vs|VS)/i);
+    
+    return parts.map((part, index) => {
+      if (/^vs$/i.test(part)) {
+        // VS部分用橙色，前后各2px间距
+        return (
+          <span key={index} className="text-cba-orange mx-0.5">
+            {part}
+          </span>
+        );
+      }
+      return <span key={index}>{part}</span>;
+    });
+  };
+
   return (
     <div className="relative" ref={dropdownRef}>
       <button
@@ -33,7 +53,7 @@ export function MatchSelect({ matches, selectedMatch, onSelect, loading }) {
         className="w-full px-4 py-2 bg-cba-bg/50 backdrop-blur-sm border border-cba-border rounded-lg text-left flex items-center justify-between hover:bg-cba-bg/70 transition-colors disabled:opacity-50"
       >
         <span className="text-sm text-cba-text truncate">
-          {selectedMatch ? selectedMatch.label : '请选择比赛'}
+          {selectedMatch ? renderMatchLabel(selectedMatch.label) : '请选择比赛'}
         </span>
         <ChevronDown
           className={`w-4 h-4 text-cba-text-secondary transition-transform ${
@@ -57,18 +77,8 @@ export function MatchSelect({ matches, selectedMatch, onSelect, loading }) {
               >
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-cba-text truncate">
-                    {match.label}
+                    {renderMatchLabel(match.label)}
                   </span>
-                  {match.status === '2' && (
-                    <span className="ml-2 px-2 py-0.5 text-xs bg-cba-success/20 text-cba-success rounded">
-                      进行中
-                    </span>
-                  )}
-                  {match.status === '0' && (
-                    <span className="ml-2 px-2 py-0.5 text-xs bg-cba-text-secondary/20 text-cba-text-secondary rounded">
-                      未开始
-                    </span>
-                  )}
                 </div>
               </button>
             ))
