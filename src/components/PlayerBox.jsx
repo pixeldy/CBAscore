@@ -17,39 +17,30 @@ export function PlayerBox({ homeTeam, awayTeam }) {
 
   const activeTeam = activeTab === 'home' ? homeTeam : awayTeam;
   const players = activeTeam.players || [];
+  const starters = players.filter((p) => p.gameStart);
+  const bench = players.filter((p) => !p.gameStart);
+  const sortByPointsDesc = (a, b) => (b.points ?? 0) - (a.points ?? 0);
+  starters.sort(sortByPointsDesc);
+  bench.sort(sortByPointsDesc);
+  const sortedPlayers = [...starters, ...bench];
+  const starterCount = starters.length;
 
-  // 根据模板html.player顺序定义表头
   const columns = [
-    { key: 'positionDescription', label: '位置', width: '80px' },
-    { key: 'primaryPosition', label: '首发位置', width: '80px' },
+    { key: 'seconds', label: '时间', width: '70px' },
     { key: 'points', label: '得分', width: '60px' },
     { key: 'rebounds', label: '篮板', width: '60px' },
     { key: 'assists', label: '助攻', width: '60px' },
-    { key: 'blocked', label: '盖帽', width: '60px' },
     { key: 'steals', label: '抢断', width: '60px' },
-    { key: 'gameStart', label: '首发', width: '50px' },
-    { key: 'seconds', label: '时间', width: '70px' },
-    { key: 'fieldGoals', label: '投篮命中', width: '70px' },
-    { key: 'fieldGoalsAttempted', label: '投篮出手', width: '70px' },
-    { key: 'fieldGoalsPercentage', label: '投篮%', width: '70px' },
     { key: 'threePointGoals', label: '三分命中', width: '70px' },
     { key: 'threePointAttempted', label: '三分出手', width: '70px' },
     { key: 'threePointPercentage', label: '三分%', width: '70px' },
     { key: 'freeThrows', label: '罚球命中', width: '70px' },
     { key: 'freeThrowsAttempted', label: '罚球出手', width: '70px' },
     { key: 'freeThrowsPercentage', label: '罚球%', width: '70px' },
-    { key: 'reboundsOffensive', label: '进攻篮板', width: '80px' },
-    { key: 'reboundsDefensive', label: '防守篮板', width: '80px' },
+    { key: 'blocked', label: '盖帽', width: '60px' },
     { key: 'turnovers', label: '失误', width: '60px' },
     { key: 'personalFouls', label: '犯规', width: '60px' },
-    { key: 'plusMinus', label: '+/-', width: '70px' },
-    { key: 'onCourt', label: '在场', width: '50px' },
-    { key: 'onePointGoals', label: '一分命中', width: '70px' },
-    { key: 'onePointAttempted', label: '一分出手', width: '70px' },
-    { key: 'onePointPercentage', label: '一分%', width: '70px' },
-    { key: 'twoPointGoals', label: '两分命中', width: '70px' },
-    { key: 'twoPointAttempted', label: '两分出手', width: '70px' },
-    { key: 'twoPointPercentage', label: '两分%', width: '70px' },
+    { key: 'plusMinus', label: '正负值', width: '70px' },
   ];
 
   // 获取单元格值
@@ -135,19 +126,19 @@ export function PlayerBox({ homeTeam, awayTeam }) {
             </tr>
           </thead>
           <tbody>
-            {players.length === 0 ? (
+            {sortedPlayers.length === 0 ? (
               <tr>
                 <td colSpan={columns.length + 1} className="px-3 py-8 text-center text-cba-text-secondary">
                   暂无球员数据
                 </td>
               </tr>
             ) : (
-              players.map((player) => (
+              sortedPlayers.map((player, i) => (
                 <tr
                   key={player.id}
                   className={`border-b border-cba-border/50 hover:bg-cba-bg/30 transition-colors ${
                     player.onCourt ? 'bg-cba-success/10' : ''
-                  }`}
+                  } ${starterCount > 0 && i === starterCount ? 'border-t-2 border-cba-orange' : ''}`}
                 >
                   {/* 球员信息列 - 固定在左侧 */}
                   <td className="px-3 py-2 sticky left-0 bg-inherit z-10">
