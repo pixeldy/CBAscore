@@ -1,0 +1,5454 @@
+{
+  "code": 200,
+  "message": "OK",
+  "body": {
+    "refreshInterval": "10",
+    "sportItemId": "2",
+    "statisticOrder": {
+      "app": {
+        "team": [
+          "assists",
+          "threePointRatio",
+          "steals",
+          "blocked",
+          "turnovers",
+          "freeThrowRatio",
+          "fieldGoalsPercentage",
+          "freeThrowsPercentage",
+          "threePointPercentage"
+        ]
+      },
+      "html": {
+        "team": [
+          "fieldGoals",
+          "fieldGoalsAttempted",
+          "fieldGoalsPercentage",
+          "threePointGoals",
+          "threePointAttempted",
+          "threePointPercentage",
+          "freeThrows",
+          "freeThrowsAttempted",
+          "freeThrowsPercentage",
+          "assists",
+          "rebounds",
+          "reboundsOffensive",
+          "reboundsDefensive",
+          "steals",
+          "blocked",
+          "turnovers",
+          "personalFouls",
+          "onePointGoals",
+          "onePointAttempted",
+          "onePointPercentage",
+          "twoPointGoals",
+          "twoPointAttempted",
+          "twoPointPercentage"
+        ],
+        "player": [
+          "positionDescription",
+          "primaryPosition",
+          "points",
+          "rebounds",
+          "assists",
+          "blocked",
+          "steals",
+          "gameStart",
+          "seconds",
+          "fieldGoals",
+          "fieldGoalsAttempted",
+          "fieldGoalsPercentage",
+          "threePointGoals",
+          "threePointAttempted",
+          "threePointPercentage",
+          "freeThrows",
+          "freeThrowsAttempted",
+          "freeThrowsPercentage",
+          "reboundsOffensive",
+          "reboundsDefensive",
+          "turnovers",
+          "personalFouls",
+          "plusMinus",
+          "onCourt",
+          "onePointGoals",
+          "onePointAttempted",
+          "onePointPercentage",
+          "twoPointGoals",
+          "twoPointAttempted",
+          "twoPointPercentage"
+        ]
+      }
+    },
+    "statisticInfoList": [
+      {
+        "teamInfo": {
+          "isHome": "1",
+          "teamId": "1600000001",
+          "teamName": "广东东阳光",
+          "teamLogo": "https://img.cmvideo.cn/sports/uploadImages/2020/10/21/16000000000010497f8c.png"
+        },
+        "teamStatisticList": [
+          {
+            "rate": false,
+            "itemName": "投篮命中数",
+            "value": "35",
+            "dataKey": "fieldGoals",
+            "dataType": "fieldGoals",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "投篮出手数",
+            "value": "76",
+            "dataKey": "fieldGoalsAttempted",
+            "dataType": "fieldGoals",
+            "isPrimary": true
+          },
+          {
+            "rate": true,
+            "itemName": "投篮命中率",
+            "value": "46.1",
+            "dataKey": "fieldGoalsPercentage",
+            "dataType": "fieldGoals",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "三分命中数",
+            "value": "10",
+            "dataKey": "threePointGoals",
+            "dataType": "threePoint",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "三分出手数",
+            "value": "29",
+            "dataKey": "threePointAttempted",
+            "dataType": "threePoint"
+          },
+          {
+            "rate": true,
+            "itemName": "三分命中率",
+            "value": "34.5",
+            "dataKey": "threePointPercentage",
+            "dataType": "threePoint",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "罚球",
+            "value": "17",
+            "dataKey": "freeThrows",
+            "dataType": "freeThrows"
+          },
+          {
+            "rate": false,
+            "itemName": "罚球出手数",
+            "value": "26",
+            "dataKey": "freeThrowsAttempted",
+            "dataType": "freeThrows",
+            "isPrimary": true
+          },
+          {
+            "rate": true,
+            "itemName": "罚球命中率",
+            "value": "65.4",
+            "dataKey": "freeThrowsPercentage",
+            "dataType": "freeThrows",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "助攻",
+            "value": "30",
+            "dataKey": "assists",
+            "dataType": "assists",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "篮板",
+            "value": "44",
+            "dataKey": "rebounds",
+            "dataType": "rebounds",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "进攻篮板",
+            "value": "18",
+            "dataKey": "reboundsOffensive",
+            "dataType": "reboundsOffensive",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "防守篮板",
+            "value": "26",
+            "dataKey": "reboundsDefensive",
+            "dataType": "reboundsDefensive",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "抢断",
+            "value": "8",
+            "dataKey": "steals",
+            "dataType": "steals",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "盖帽",
+            "value": "4",
+            "dataKey": "blocked",
+            "dataType": "blocked",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "失误",
+            "value": "12",
+            "dataKey": "turnovers",
+            "dataType": "turnovers",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "犯规",
+            "value": "20",
+            "dataKey": "personalFouls",
+            "dataType": "personalFouls",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "两分命中数",
+            "value": "25",
+            "dataKey": "twoPointGoals",
+            "dataType": "twoPoint",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "两分出手数",
+            "value": "47",
+            "dataKey": "twoPointAttempted",
+            "dataType": "twoPoint",
+            "isPrimary": true
+          },
+          {
+            "rate": true,
+            "itemName": "两分命中率",
+            "value": "53.2",
+            "dataKey": "twoPointPercentage",
+            "dataType": "twoPoint",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "三分",
+            "value": "10/29",
+            "dataKey": "threePointRatio",
+            "dataType": "threePointRatio",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "罚球",
+            "value": "17/26",
+            "dataKey": "freeThrowRatio",
+            "dataType": "freeThrowRatio",
+            "isPrimary": false
+          }
+        ],
+        "playerStatisticList": [
+          {
+            "playerInfo": {
+              "playerId": "1500080101",
+              "playerName": "徐杰",
+              "playerNumber": "2",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000000801.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "控球后卫",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "控球后卫",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "17",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "3",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "9",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "1",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "1",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1984",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "6",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "14",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "43",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "5",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "10",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "50",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "0",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "0",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "0",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "1",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "2",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "1",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "7",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "1",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "1",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "4",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "25",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "5/10",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "0/0",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "6/14",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1500060501",
+              "playerName": "贾里德-萨林杰",
+              "playerNumber": "0",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000000605.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "大前锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "大前锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "17",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "10",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "3",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "2",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "1",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1644",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "6",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "11",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "55",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "1",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "5",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "7",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "71",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "5",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "5",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "1",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "2",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "3",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "6",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "10",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "60",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/1",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "5/7",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "6/11",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1568428501",
+              "playerName": "特雷维林·奎因",
+              "playerNumber": "10",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000684285.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "得分后卫/控球后卫",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "得分后卫/控球后卫",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "16",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "6",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "6",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "3",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "1",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1530",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "6",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "13",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "46",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "2",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "5",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "40",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "2",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "2",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "100",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "3",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "3",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "4",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "1",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "3",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "1",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "4",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "8",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "50",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "2/5",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "2/2",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "6/13",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1564812001",
+              "playerName": "艾德蒙·萨姆纳",
+              "playerNumber": "1",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000648120.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "得分后卫",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "得分后卫",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "16",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "2",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "2",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1026",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "7",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "13",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "54",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "1",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "4",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "25",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "1",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "2",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "50",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "2",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "4",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "4",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "4",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "6",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "9",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "66.7",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "1/4",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "1/2",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "7/13",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1500077001",
+              "playerName": "王少杰",
+              "playerNumber": "28",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000000770.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "大前锋/中锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "大前锋/中锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "14",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "8",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "1",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "2",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "1",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1483",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "5",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "9",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "56",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "0",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "4",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "8",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "50",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "3",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "5",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "2",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "4",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "1",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "5",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "9",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "55.6",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/0",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "4/8",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "5/9",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1500058801",
+              "playerName": "胡明轩",
+              "playerNumber": "3",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000000588.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "控球后卫/得分后卫",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "控球后卫/得分后卫",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "8",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "3",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "4",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "1",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1623",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "2",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "8",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "25",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "2",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "7",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "29",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "2",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "2",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "100",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "1",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "2",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "1",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "2",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "-10",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "1",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "0",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "1",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "0",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "2/7",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "2/2",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "2/8",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1568289501",
+              "playerName": "王洪泽",
+              "playerNumber": "41",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000682895.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "大前锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "大前锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "5",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "5",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "2",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "2",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "1",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1357",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "2",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "3",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "67",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "0",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "1",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "3",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "33",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "4",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "1",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "1",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "0",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "-3",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "1",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "2",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "3",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "66.7",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/0",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "1/3",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "2/3",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1566242101",
+              "playerName": "陈家政",
+              "playerNumber": "5",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000662421.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "得分后卫",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "得分后卫",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "2",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "0",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "2",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "1",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "956",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "0",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "4",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "0",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "2",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "2",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "2",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "100",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "0",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "1",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "5",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "11",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "0",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "2",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "0",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/2",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "2/2",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "0/4",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1536362101",
+              "playerName": "焦泊乔",
+              "playerNumber": "16",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000363621.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "大前锋/中锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "大前锋/中锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "2",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "2",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "1",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "372",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "1",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "1",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "100",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "0",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "0",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "0",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "0",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "2",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "3",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "-6",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "1",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "1",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "100",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/0",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "0/0",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "1/1",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1547096501",
+              "playerName": "黄明依",
+              "playerNumber": "6",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000470965.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "大前锋/小前锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "大前锋/小前锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "0",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "0",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "0",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "0",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "0",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "0",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "0",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "0",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "0",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "0",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "0",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "0",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "0",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "0",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "0",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "0",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "0",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/0",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "0/0",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "0/0",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1563583001",
+              "playerName": "杨溢",
+              "playerNumber": "33",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000635830.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "控球后卫",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "控球后卫",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "0",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "0",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "0",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "0",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "0",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "0",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "0",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "0",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "0",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "0",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "0",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "0",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "0",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "0",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "0",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "0",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "0",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/0",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "0/0",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "0/0",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1550796101",
+              "playerName": "张文逸",
+              "playerNumber": "14",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000507961.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "得分后卫/控球后卫",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "得分后卫/控球后卫",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "0",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "0",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "0",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "25",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "0",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "0",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "0",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "0",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "0",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "0",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "0",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "0",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "0",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "2",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "0",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "0",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "0",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/0",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "0/0",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "0/0",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "teamInfo": {
+          "isHome": "0",
+          "teamId": "1600001201",
+          "teamName": "广州朗肽海本",
+          "teamLogo": "https://img.cmvideo.cn/sports/uploadImages/2021/10/9/160000000012104c980b.png"
+        },
+        "teamStatisticList": [
+          {
+            "rate": false,
+            "itemName": "投篮命中数",
+            "value": "32",
+            "dataKey": "fieldGoals",
+            "dataType": "fieldGoals",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "投篮出手数",
+            "value": "71",
+            "dataKey": "fieldGoalsAttempted",
+            "dataType": "fieldGoals",
+            "isPrimary": false
+          },
+          {
+            "rate": true,
+            "itemName": "投篮命中率",
+            "value": "45.1",
+            "dataKey": "fieldGoalsPercentage",
+            "dataType": "fieldGoals",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "三分命中数",
+            "value": "13",
+            "dataKey": "threePointGoals",
+            "dataType": "threePoint",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "三分出手数",
+            "value": "29",
+            "dataKey": "threePointAttempted",
+            "dataType": "threePoint"
+          },
+          {
+            "rate": true,
+            "itemName": "三分命中率",
+            "value": "44.8",
+            "dataKey": "threePointPercentage",
+            "dataType": "threePoint",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "罚球",
+            "value": "17",
+            "dataKey": "freeThrows",
+            "dataType": "freeThrows"
+          },
+          {
+            "rate": false,
+            "itemName": "罚球出手数",
+            "value": "23",
+            "dataKey": "freeThrowsAttempted",
+            "dataType": "freeThrows",
+            "isPrimary": false
+          },
+          {
+            "rate": true,
+            "itemName": "罚球命中率",
+            "value": "73.9",
+            "dataKey": "freeThrowsPercentage",
+            "dataType": "freeThrows",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "助攻",
+            "value": "20",
+            "dataKey": "assists",
+            "dataType": "assists",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "篮板",
+            "value": "43",
+            "dataKey": "rebounds",
+            "dataType": "rebounds",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "进攻篮板",
+            "value": "16",
+            "dataKey": "reboundsOffensive",
+            "dataType": "reboundsOffensive",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "防守篮板",
+            "value": "27",
+            "dataKey": "reboundsDefensive",
+            "dataType": "reboundsDefensive",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "抢断",
+            "value": "6",
+            "dataKey": "steals",
+            "dataType": "steals",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "盖帽",
+            "value": "1",
+            "dataKey": "blocked",
+            "dataType": "blocked",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "失误",
+            "value": "16",
+            "dataKey": "turnovers",
+            "dataType": "turnovers",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "犯规",
+            "value": "24",
+            "dataKey": "personalFouls",
+            "dataType": "personalFouls",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "两分命中数",
+            "value": "19",
+            "dataKey": "twoPointGoals",
+            "dataType": "twoPoint",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "两分出手数",
+            "value": "42",
+            "dataKey": "twoPointAttempted",
+            "dataType": "twoPoint",
+            "isPrimary": false
+          },
+          {
+            "rate": true,
+            "itemName": "两分命中率",
+            "value": "45.2",
+            "dataKey": "twoPointPercentage",
+            "dataType": "twoPoint",
+            "isPrimary": false
+          },
+          {
+            "rate": false,
+            "itemName": "三分",
+            "value": "13/29",
+            "dataKey": "threePointRatio",
+            "dataType": "threePointRatio",
+            "isPrimary": true
+          },
+          {
+            "rate": false,
+            "itemName": "罚球",
+            "value": "17/23",
+            "dataKey": "freeThrowRatio",
+            "dataType": "freeThrowRatio",
+            "isPrimary": true
+          }
+        ],
+        "playerStatisticList": [
+          {
+            "playerInfo": {
+              "playerId": "1568432901",
+              "playerName": "林德尔·威金顿",
+              "playerNumber": "28",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000684329.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "控球后卫/得分后卫",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "控球后卫/得分后卫",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "25",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "2",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "8",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "1",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "1",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1578",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "7",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "18",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "39",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "3",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "7",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "43",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "8",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "11",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "73",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "1",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "1",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "3",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "3",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "8",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "1",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "4",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "11",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "36.4",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "3/7",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "8/11",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "7/18",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1568428801",
+              "playerName": "贾斯汀·霍勒迪",
+              "playerNumber": "8",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000684288.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "小前锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "小前锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "13",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "2",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "2",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "1",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1473",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "5",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "10",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "50",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "3",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "5",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "60",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "0",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "0",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "0",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "2",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "1",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "-19",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "2",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "5",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "40",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "3/5",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "0/0",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "5/10",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1547099501",
+              "playerName": "袁照耀",
+              "playerNumber": "5",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000470995.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "大前锋/小前锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "大前锋/小前锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "10",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "4",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "0",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "1",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "920",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "3",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "5",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "60",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "2",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "3",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "67",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "2",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "2",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "100",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "4",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "1",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "1",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "3",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "1",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "1",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "2",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "50",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "2/3",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "2/2",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "3/5",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1500056201",
+              "playerName": "郭艾伦",
+              "playerNumber": "13",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000000562.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "控球后卫/得分后卫",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "控球后卫/得分后卫",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "9",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "4",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "3",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "1",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "1",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1549",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "3",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "8",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "37",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "2",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "3",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "6",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "50",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "4",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "4",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "2",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "-8",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "3",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "6",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "50",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/2",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "3/6",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "3/8",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1519171101",
+              "playerName": "刘颜诚",
+              "playerNumber": "11",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000191711.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "得分后卫/小前锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "得分后卫/小前锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "9",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "1",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "1",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "1",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1161",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "3",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "4",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "75",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "3",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "4",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "75",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "0",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "0",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "0",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "1",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "1",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "5",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "-9",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "0",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "0",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "0",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "3/4",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "0/0",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "3/4",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1568429101",
+              "playerName": "埃里克·托马斯",
+              "playerNumber": "4",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000684291.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "小前锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "小前锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "8",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "10",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "2",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "1",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1149",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "3",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "7",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "43",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "1",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "2",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "2",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "100",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "3",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "7",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "2",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "1",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "3",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "6",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "50",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/1",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "2/2",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "3/7",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1563927701",
+              "playerName": "李祥波",
+              "playerNumber": "12",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000639277.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "大前锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "大前锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "6",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "7",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "1",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "2",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1467",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "3",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "6",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "50",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "2",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "0",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "0",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "0",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "3",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "4",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "3",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "9",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "1",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "3",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "4",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "75",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/2",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "0/0",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "3/6",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1553826301",
+              "playerName": "邵炜昀",
+              "playerNumber": "7",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000538263.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "控球后卫",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "控球后卫",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "6",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "0",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "0",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "794",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "2",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "4",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "50",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "2",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "4",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "50",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "0",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "0",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "0",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "0",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "4",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "3",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "8",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "1",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "0",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "0",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "0",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "2/4",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "0/0",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "2/4",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1507363801",
+              "playerName": "陈国豪",
+              "playerNumber": "23",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000073638.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "大前锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "大前锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "4",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "5",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "2",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "1459",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "1",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "7",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "14",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "1",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "2",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "2",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "100",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "4",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "1",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "3",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "-8",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "1",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "1",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "6",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "16.7",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/1",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "2/2",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "1/7",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1519171701",
+              "playerName": "徐昕",
+              "playerNumber": "19",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000191717.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "中锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "中锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "4",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "2",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "1",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "1",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "1",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "400",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "2",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "2",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "100",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "0",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "0",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "0",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "0",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "2",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "1",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "0",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "2",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "2",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "100",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/0",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "0/0",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "2/2",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1563583201",
+              "playerName": "彰华非",
+              "playerNumber": "3",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000635832.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "得分后卫/小前锋",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "得分后卫/小前锋",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "0",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "1",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "0",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "50",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "0",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "0",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "0",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "0",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "0",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "0",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "0",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "1",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "0",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "0",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "0",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "0",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "0",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "0",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/0",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "0/0",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "0/0",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          },
+          {
+            "playerInfo": {
+              "playerId": "1568288901",
+              "playerName": "张文杰",
+              "playerNumber": "21",
+              "playerLogo": "https://img.cmvideo.cn/sports/2025-12-19/150000682889.png"
+            },
+            "playDataList": [
+              {
+                "rate": false,
+                "itemName": "位置描述",
+                "value": "控球后卫/得分后卫",
+                "dataKey": "positionDescription"
+              },
+              {
+                "rate": false,
+                "itemName": "首发位置",
+                "value": "控球后卫/得分后卫",
+                "dataKey": "primaryPosition"
+              },
+              {
+                "rate": false,
+                "itemName": "得分",
+                "value": "0",
+                "dataKey": "points"
+              },
+              {
+                "rate": false,
+                "itemName": "篮板",
+                "value": "0",
+                "dataKey": "rebounds"
+              },
+              {
+                "rate": false,
+                "itemName": "助攻",
+                "value": "0",
+                "dataKey": "assists"
+              },
+              {
+                "rate": false,
+                "itemName": "盖帽",
+                "value": "0",
+                "dataKey": "blocked"
+              },
+              {
+                "rate": false,
+                "itemName": "抢断",
+                "value": "0",
+                "dataKey": "steals"
+              },
+              {
+                "rate": false,
+                "itemName": "是否首发",
+                "value": "0",
+                "dataKey": "gameStart"
+              },
+              {
+                "rate": false,
+                "itemName": "上场时间",
+                "value": "0",
+                "dataKey": "seconds"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮命中数",
+                "value": "0",
+                "dataKey": "fieldGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮出手数",
+                "value": "0",
+                "dataKey": "fieldGoalsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "投篮命中率",
+                "value": "0",
+                "dataKey": "fieldGoalsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分命中数",
+                "value": "0",
+                "dataKey": "threePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "三分出手数",
+                "value": "0",
+                "dataKey": "threePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "三分命中率",
+                "value": "0",
+                "dataKey": "threePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球命中数",
+                "value": "0",
+                "dataKey": "freeThrows"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球总数",
+                "value": "0",
+                "dataKey": "freeThrowsAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "罚球命中率",
+                "value": "0",
+                "dataKey": "freeThrowsPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "进攻篮板",
+                "value": "0",
+                "dataKey": "reboundsOffensive"
+              },
+              {
+                "rate": false,
+                "itemName": "防守篮板",
+                "value": "0",
+                "dataKey": "reboundsDefensive"
+              },
+              {
+                "rate": false,
+                "itemName": "失误",
+                "value": "0",
+                "dataKey": "turnovers"
+              },
+              {
+                "rate": false,
+                "itemName": "犯规",
+                "value": "0",
+                "dataKey": "personalFouls"
+              },
+              {
+                "rate": false,
+                "itemName": "正负值",
+                "value": "0",
+                "dataKey": "plusMinus"
+              },
+              {
+                "rate": false,
+                "itemName": "是否在场上",
+                "value": "0",
+                "dataKey": "onCourt"
+              },
+              {
+                "rate": false,
+                "itemName": "一分命中数",
+                "value": "0",
+                "dataKey": "onePointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "一分出手数",
+                "value": "0",
+                "dataKey": "onePointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "一分命中率",
+                "value": "0",
+                "dataKey": "onePointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "两分命中数",
+                "value": "0",
+                "dataKey": "twoPointGoals"
+              },
+              {
+                "rate": false,
+                "itemName": "两分出手数",
+                "value": "0",
+                "dataKey": "twoPointAttempted"
+              },
+              {
+                "rate": true,
+                "itemName": "两分命中率",
+                "value": "0",
+                "dataKey": "twoPointPercentage"
+              },
+              {
+                "rate": false,
+                "itemName": "三分",
+                "value": "0/0",
+                "dataKey": "threePointRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "罚球",
+                "value": "0/0",
+                "dataKey": "freeThrowRatio"
+              },
+              {
+                "rate": false,
+                "itemName": "投篮",
+                "value": "0/0",
+                "dataKey": "fieldGoalRatio"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "serverOptions": {
+    "refreshInterval": 10,
+    "cacheExpire": 5
+  },
+  "timeStamp": 1766154312121,
+  "dataVersion": 20251219222512
+}

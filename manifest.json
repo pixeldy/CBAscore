@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "CBA Live Insight",
+  "version": "1.0.0",
+  "description": "CBA Real-time stats assistant for Douyin Live",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://live.douyin.com/*",
+    "https://vms-sc.miguvideo.com/*",
+    "https://v0-sc.miguvideo.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background/index.js",
+    "type": "module"
+  },
+  "action": {
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icon-16.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://live.douyin.com/*"],
+      "js": ["src/content/index.jsx"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": ["https://live.douyin.com/*"]
+    }
+  ]
+}
