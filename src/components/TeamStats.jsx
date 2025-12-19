@@ -140,9 +140,9 @@ export function TeamStats({ homeTeam, awayTeam }) {
   ];
 
   const StatBar = ({ config, homeValue, awayValue }) => {
-    const maxValue = Math.max(homeValue, awayValue, 1);
-    const homePercent = (homeValue / maxValue) * 100;
-    const awayPercent = (awayValue / maxValue) * 100;
+    const clamp = (n) => Math.max(0, Math.min(100, n));
+    const homePercent = clamp(homeValue);
+    const awayPercent = clamp(awayValue);
 
     return (
       <div className="py-3 border-b border-cba-border last:border-b-0">
@@ -151,7 +151,7 @@ export function TeamStats({ homeTeam, awayTeam }) {
           <div className="flex-1 flex items-center gap-2">
             <div className="flex-1 h-2 bg-cba-bg rounded-full overflow-hidden">
               <div
-                className="h-full bg-cba-orange transition-all duration-500"
+                className="h-full bg-cba-orange transition-all duration-500 ml-auto"
                 style={{ width: `${homePercent}%` }}
               />
             </div>
@@ -169,7 +169,7 @@ export function TeamStats({ homeTeam, awayTeam }) {
             </span>
             <div className="flex-1 h-2 bg-blue-50 rounded-full overflow-hidden">
               <div
-                className="h-full bg-cba-orange transition-all duration-500 ml-auto"
+                className="h-full bg-blue-500 transition-all duration-500"
                 style={{ width: `${awayPercent}%` }}
               />
             </div>
