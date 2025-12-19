@@ -39,29 +39,21 @@ export function ScoreBoard({ homeTeam, awayTeam, status }) {
   return (
     <div className="p-4 bg-cba-bg/30 backdrop-blur-sm rounded-lg border border-cba-border">
       <div className="flex items-center justify-between mb-2">
+        {/* 主队显示在左边 */}
         <div className="flex items-center gap-3 flex-1">
-          {awayTeam?.logo && (
+          {homeTeam?.logo && (
             <img
-              src={awayTeam.logo}
-              alt={awayTeam.name}
+              src={homeTeam.logo}
+              alt={homeTeam.name}
               className="w-10 h-10 object-contain"
             />
           )}
           <span className="text-sm text-cba-text font-medium flex-1 truncate">
-            {awayTeam?.name || '客队'}
+            {homeTeam?.name || '主队'}
           </span>
         </div>
+        {/* 比分显示：主队 : 客队 */}
         <div className="flex items-center gap-2 mx-4">
-          <span
-            className={`text-2xl font-bold transition-all duration-300 ${
-              awayScoreChanged
-                ? 'text-cba-success scale-125'
-                : 'text-cba-text'
-            }`}
-          >
-            {awayScore >= 0 ? awayScore : '-'}
-          </span>
-          <span className="text-xl text-cba-text-secondary">:</span>
           <span
             className={`text-2xl font-bold transition-all duration-300 ${
               homeScoreChanged
@@ -71,15 +63,26 @@ export function ScoreBoard({ homeTeam, awayTeam, status }) {
           >
             {homeScore >= 0 ? homeScore : '-'}
           </span>
+          <span className="text-xl text-cba-text-secondary">:</span>
+          <span
+            className={`text-2xl font-bold transition-all duration-300 ${
+              awayScoreChanged
+                ? 'text-cba-success scale-125'
+                : 'text-cba-text'
+            }`}
+          >
+            {awayScore >= 0 ? awayScore : '-'}
+          </span>
         </div>
+        {/* 客队显示在右边 */}
         <div className="flex items-center gap-3 flex-1 justify-end">
           <span className="text-sm text-cba-text font-medium flex-1 truncate text-right">
-            {homeTeam?.name || '主队'}
+            {awayTeam?.name || '客队'}
           </span>
-          {homeTeam?.logo && (
+          {awayTeam?.logo && (
             <img
-              src={homeTeam.logo}
-              alt={homeTeam.name}
+              src={awayTeam.logo}
+              alt={awayTeam.name}
               className="w-10 h-10 object-contain"
             />
           )}
