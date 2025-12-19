@@ -29,9 +29,6 @@ function init() {
   // 挂载React应用
   const root = createRoot(container);
   root.render(<App />);
-
-  // 确保容器内的元素可以接收事件
-  container.style.pointerEvents = 'auto';
 }
 
 // 如果DOM已经加载完成，立即初始化
