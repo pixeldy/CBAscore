@@ -19,7 +19,10 @@ export function MainPanel({
   error,
 }) {
   return (
-    <div className="fixed right-4 top-1/2 -translate-y-1/2 z-50 w-[360px] bg-cba-bg backdrop-blur-lg border border-cba-border rounded-xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh]">
+    <div 
+      className="fixed right-4 top-1/2 -translate-y-1/2 z-50 w-[360px] h-[80vh] bg-cba-bg backdrop-blur-lg border border-cba-border rounded-xl shadow-2xl overflow-hidden flex flex-col"
+      onMouseLeave={onClose}
+    >
       <Header
         matches={matches}
         selectedMatch={selectedMatch}

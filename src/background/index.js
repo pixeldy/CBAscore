@@ -55,7 +55,11 @@ async function fetchMatchList() {
     const response = await fetch(url, {
       method: 'GET',
       headers: {
-        'Content-Type': 'application/json',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'application/json, text/plain, */*',
+        'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Referer': 'https://www.miguvideo.com/',
       },
     });
 
@@ -95,7 +99,11 @@ async function fetchMatchStats(matchId) {
     const response = await fetch(url, {
       method: 'GET',
       headers: {
-        'Content-Type': 'application/json',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'application/json, text/plain, */*',
+        'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Referer': 'https://www.miguvideo.com/',
       },
     });
 
