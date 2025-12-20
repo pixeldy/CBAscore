@@ -88,11 +88,6 @@ export function ScoreBoard({ homeTeam, awayTeam, status }) {
           )}
         </div>
       </div>
-      <div className="text-center">
-        <span className={`text-xs font-medium ${getStatusColor()}`}>
-          {getStatusText()}
-        </span>
-      </div>
     </div>
   );
 }

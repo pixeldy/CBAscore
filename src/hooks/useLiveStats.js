@@ -21,6 +21,7 @@ export function useLiveStats(matchId) {
     },
     enabled: !!matchId, // 只有matchId存在时才启用查询
     refetchInterval: 10000, // 每10秒轮询一次
+    refetchOnWindowFocus: true, // 窗口聚焦时刷新
     staleTime: 0, // 数据立即过期，确保每次都获取最新数据
     gcTime: 30 * 1000, // 30秒后清理缓存
     retry: 1, // 失败重试1次
