@@ -1,15 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "CBA Live Insight",
+  "name": "CBA直播球队统计数据",
   "version": "1.0.0",
-  "description": "CBA Real-time stats assistant for Douyin Live",
+  "description": "CBA Real-time stats assistant for CBA Live on 抖音",
   "permissions": ["storage"],
   "host_permissions": [
     "https://live.douyin.com/*",
     "https://vms-sc.miguvideo.com/*",
-    "https://v0-sc.miguvideo.com/*",
-    "https://cbs.sports.cctv.com/*",
-    "https://www.miguvideo.com/p/live/*"
+    "https://v0-sc.miguvideo.com/*"
   ],
   "background": {
     "service_worker": "src/background/index.js",
