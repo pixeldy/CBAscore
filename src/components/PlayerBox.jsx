@@ -23,7 +23,6 @@ export function PlayerBox({ homeTeam, awayTeam }) {
   starters.sort(sortByPointsDesc);
   bench.sort(sortByPointsDesc);
   const sortedPlayers = [...starters, ...bench];
-  const starterCount = starters.length;
 
   const columns = [
     { key: 'seconds', label: '时间', width: '70px' },
@@ -110,8 +109,8 @@ export function PlayerBox({ homeTeam, awayTeam }) {
       <div className="overflow-x-auto">
         <table className="w-full text-sm border-collapse">
           <thead>
-            <tr className="border-b border-cba-border bg-cba-bg/50 sticky top-0 z-10">
-              <th className="px-3 py-2 text-left text-cba-text-secondary font-medium sticky left-0 bg-cba-bg/95 z-20">
+            <tr className="border-b border-cba-border bg-cba-bg sticky top-0 z-30">
+              <th className="w-20 px-2 py-2 text-left text-cba-text-secondary font-medium sticky left-0 bg-cba-bg z-40">
                 球员
               </th>
               {columns.map((col) => (
@@ -138,18 +137,25 @@ export function PlayerBox({ homeTeam, awayTeam }) {
                   key={player.id}
                   className={`border-b border-cba-border/50 hover:bg-cba-bg/30 transition-colors ${
                     player.onCourt ? 'bg-cba-success/10' : ''
-                  } ${starterCount > 0 && i === starterCount ? 'border-t-2 border-cba-orange' : ''}`}
+                  } ${i === 4 && sortedPlayers.length > 5 ? '!border-b-2 !border-blue-500' : ''}`}
                 >
                   {/* 球员信息列 - 固定在左侧 */}
-                  <td className="px-3 py-2 sticky left-0 bg-inherit z-10">
-                    <div className="flex items-center gap-2">
+                  <td className="w-20 px-2 py-2 sticky left-0 bg-inherit z-10">
+                    <div className="flex items-center gap-1">
                       {player.onCourt && (
-                        <span className="w-2 h-2 rounded-full bg-cba-success flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-cba-success flex-shrink-0" />
                       )}
-                      <span className="text-xs text-cba-text-secondary">
+                      <span className="text-xs text-cba-text-secondary flex-shrink-0">
                         {player.number || '-'}
                       </span>
-                      <span className="text-cba-text font-medium">{player.name || '-'}</span>
+                      <span
+                        className="text-cba-text font-medium whitespace-nowrap"
+                        title={player.name || ''}
+                      >
+                        {player.name && player.name.length > 3
+                          ? `${player.name.substring(0, 3)}...`
+                          : (player.name || '-')}
+                      </span>
                     </div>
                   </td>
                   {columns.map((col) => (
