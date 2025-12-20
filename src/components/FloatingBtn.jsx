@@ -54,7 +54,7 @@ export function FloatingBtn({ onClick }) {
     <button
       onClick={onClick}
       onMouseDown={onMouseDown}
-      className="pointer-events-auto fixed right-4 -translate-y-1/2 z-50 w-14 h-14 rounded-full bg-cba-bg backdrop-blur-lg border border-cba-border flex items-center justify-center hover:bg-cba-orange/20 transition-all duration-300 shadow-lg hover:scale-110"
+      className="pointer-events-auto fixed right-4 -translate-y-1/2 z-50 w-10 h-10 rounded-full bg-cba-bg backdrop-blur-lg border border-cba-border flex items-center justify-center hover:bg-cba-orange/20 transition-all duration-300 shadow-lg hover:scale-110"
       style={{ top: btnTop }}
       aria-label="展开数据面板"
     >
