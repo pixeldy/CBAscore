@@ -17,82 +17,16 @@ export function TeamStats({ homeTeam, awayTeam }) {
   // 根据模板html.team顺序配置所有统计数据
   const statsConfig = [
     {
-      key: 'fieldGoals',
-      label: '投篮命中数',
-      format: (value) => value,
-      getValue: (stats) => parseInt(stats?.fieldGoals?.value || 0),
-    },
-    {
-      key: 'fieldGoalsAttempted',
-      label: '投篮出手数',
-      format: (value) => value,
-      getValue: (stats) => parseInt(stats?.fieldGoalsAttempted?.value || 0),
-    },
-    {
-      key: 'fieldGoalsPercentage',
-      label: '投篮命中率',
-      format: (value) => `${value}%`,
-      getValue: (stats) => parseFloat(stats?.fieldGoalsPercentage?.value || 0),
-    },
-    {
-      key: 'threePointGoals',
-      label: '三分命中数',
-      format: (value) => value,
-      getValue: (stats) => parseInt(stats?.threePointGoals?.value || 0),
-    },
-    {
-      key: 'threePointAttempted',
-      label: '三分出手数',
-      format: (value) => value,
-      getValue: (stats) => parseInt(stats?.threePointAttempted?.value || 0),
-    },
-    {
-      key: 'threePointPercentage',
-      label: '三分命中率',
-      format: (value) => `${value}%`,
-      getValue: (stats) => parseFloat(stats?.threePointPercentage?.value || 0),
-    },
-    {
-      key: 'freeThrows',
-      label: '罚球命中数',
-      format: (value) => value,
-      getValue: (stats) => parseInt(stats?.freeThrows?.value || 0),
-    },
-    {
-      key: 'freeThrowsAttempted',
-      label: '罚球出手数',
-      format: (value) => value,
-      getValue: (stats) => parseInt(stats?.freeThrowsAttempted?.value || 0),
-    },
-    {
-      key: 'freeThrowsPercentage',
-      label: '罚球命中率',
-      format: (value) => `${value}%`,
-      getValue: (stats) => parseFloat(stats?.freeThrowsPercentage?.value || 0),
-    },
-    {
-      key: 'assists',
-      label: '助攻',
-      format: (value) => value,
-      getValue: (stats) => parseInt(stats?.assists?.value || 0),
-    },
-    {
       key: 'rebounds',
       label: '篮板',
       format: (value) => value,
       getValue: (stats) => parseInt(stats?.rebounds?.value || 0),
     },
     {
-      key: 'reboundsOffensive',
-      label: '进攻篮板',
+      key: 'assists',
+      label: '助攻',
       format: (value) => value,
-      getValue: (stats) => parseInt(stats?.reboundsOffensive?.value || 0),
-    },
-    {
-      key: 'reboundsDefensive',
-      label: '防守篮板',
-      format: (value) => value,
-      getValue: (stats) => parseInt(stats?.reboundsDefensive?.value || 0),
+      getValue: (stats) => parseInt(stats?.assists?.value || 0),
     },
     {
       key: 'steals',
@@ -113,29 +47,40 @@ export function TeamStats({ homeTeam, awayTeam }) {
       getValue: (stats) => parseInt(stats?.turnovers?.value || 0),
     },
     {
+      key: 'freeThrows',
+      label: '罚球',
+      format: (value) => value,
+      getValue: (stats) => parseInt(stats?.freeThrows?.value || 0),
+    },
+    {
+      key: 'threePointGoals',
+      label: '三分命中数',
+      format: (value) => value,
+      getValue: (stats) => parseInt(stats?.threePointGoals?.value || 0),
+    },
+    {
       key: 'personalFouls',
       label: '犯规',
       format: (value) => value,
       getValue: (stats) => parseInt(stats?.personalFouls?.value || 0),
     },
-   
     {
-      key: 'twoPointGoals',
-      label: '两分命中数',
-      format: (value) => value,
-      getValue: (stats) => parseInt(stats?.twoPointGoals?.value || 0),
-    },
-    {
-      key: 'twoPointAttempted',
-      label: '两分出手数',
-      format: (value) => value,
-      getValue: (stats) => parseInt(stats?.twoPointAttempted?.value || 0),
-    },
-    {
-      key: 'twoPointPercentage',
-      label: '两分命中率',
+      key: 'fieldGoalsPercentage',
+      label: '投篮命中率',
       format: (value) => `${value}%`,
-      getValue: (stats) => parseFloat(stats?.twoPointPercentage?.value || 0),
+      getValue: (stats) => parseFloat(stats?.fieldGoalsPercentage?.value || 0),
+    },
+    {
+      key: 'freeThrowsPercentage',
+      label: '罚球命中率',
+      format: (value) => `${value}%`,
+      getValue: (stats) => parseFloat(stats?.freeThrowsPercentage?.value || 0),
+    },
+    {
+      key: 'threePointPercentage',
+      label: '三分命中率',
+      format: (value) => `${value}%`,
+      getValue: (stats) => parseFloat(stats?.threePointPercentage?.value || 0),
     },
   ];
 
