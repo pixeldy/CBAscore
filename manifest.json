@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "CBA直播球队统计数据",
+  "name": "抖咪CBA直播球队统计数据",
   "version": "1.0.0",
   "description": "CBA Real-time stats assistant for CBA Live on 抖音",
   "permissions": ["storage"],
