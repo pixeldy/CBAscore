@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { FloatingBtn } from './components/FloatingBtn';
 import { MainPanel } from './components/MainPanel';
@@ -16,6 +16,7 @@ const queryClient = new QueryClient({
 });
 
 const SHOW_FLOATING_BALL_KEY = 'cba-show-floating-ball';
+const SELECTED_MATCH_ID_KEY = 'cba-selected-match-id';
 
 function getStorageApi() {
   if (typeof chrome !== 'undefined' && chrome?.storage?.local) return chrome.storage.local;
@@ -28,8 +29,18 @@ function getStorageApi() {
 function AppContent() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [showFloatingBall, setShowFloatingBall] = useState(true);
-  const [selectedMatch, setSelectedMatch] = useState(null);
+  const [selectedMatchId, setSelectedMatchId] = useState(() => {
+    try {
+      return localStorage.getItem(SELECTED_MATCH_ID_KEY);
+    } catch {
+      return null;
+    }
+  });
   const { matches, loading, error, refetch } = useMatchList();
+  const selectedMatch = useMemo(() => {
+    if (!selectedMatchId) return null;
+    return matches.find((m) => m.id === selectedMatchId) || null;
+  }, [matches, selectedMatchId]);
   const { stats, loading: statsLoading, error: statsError } = useLiveStats(selectedMatch?.id);
 
   useEffect(() => {
@@ -83,26 +94,22 @@ function AppContent() {
     if (!showFloatingBall) setIsExpanded(false);
   }, [showFloatingBall]);
 
-  // 从localStorage恢复选中的比赛
   useEffect(() => {
-    const savedMatchId = localStorage.getItem('cba-selected-match-id');
-    if (savedMatchId && matches.length > 0) {
-      const match = matches.find((m) => m.id === savedMatchId);
-      if (match) {
-        setSelectedMatch(match);
-      }
+    try {
+      if (selectedMatchId) localStorage.setItem(SELECTED_MATCH_ID_KEY, selectedMatchId);
+      else localStorage.removeItem(SELECTED_MATCH_ID_KEY);
+    } catch {
     }
-  }, [matches]);
-
-  // 保存选中的比赛到localStorage
-  useEffect(() => {
-    if (selectedMatch) {
-      localStorage.setItem('cba-selected-match-id', selectedMatch.id);
-    }
-  }, [selectedMatch]);
+  }, [selectedMatchId]);
 
   const handleSelectMatch = (match) => {
-    setSelectedMatch(match);
+    const nextId = match?.id || null;
+    setSelectedMatchId(nextId);
+    try {
+      if (nextId) localStorage.setItem(SELECTED_MATCH_ID_KEY, nextId);
+      else localStorage.removeItem(SELECTED_MATCH_ID_KEY);
+    } catch {
+    }
   };
 
   const handleToggle = () => {
