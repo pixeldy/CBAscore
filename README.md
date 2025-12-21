@@ -1,5 +1,5 @@
 # CBA Live Insight
-
+![样式图片](./assets/demo.png)
 CBA 赛场洞察 Chrome 插件 - 在抖音网页版观看CBA直播时提供实时数据面板。
 
 ## 功能特性
