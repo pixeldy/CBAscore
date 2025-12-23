@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { TeamStats } from './TeamStats';
 import { PlayerBox } from './PlayerBox';
 
 /**
  * 数据切换Tab组件
  */
-export function StatsTabs({ stats }) {
-  const [activeTab, setActiveTab] = useState('team'); // 'team' | 'player'
-
+export function StatsTabs({ 
+  stats, 
+  activeTab, 
+  onTabChange,
+  activePlayerTeamTab,
+  onPlayerTeamTabChange 
+}) {
   if (!stats) {
     return (
       <div className="p-8 text-center text-cba-text-secondary">
@@ -21,7 +25,7 @@ export function StatsTabs({ stats }) {
       {/* Tab切换 */}
       <div className="flex border-b border-cba-border">
         <button
-          onClick={() => setActiveTab('team')}
+          onClick={() => onTabChange('team')}
           className={`flex-1 px-4 py-2 text-sm font-medium transition-colors ${
             activeTab === 'team'
               ? 'text-cba-orange border-b-2 border-cba-orange'
@@ -31,7 +35,7 @@ export function StatsTabs({ stats }) {
           球队对比
         </button>
         <button
-          onClick={() => setActiveTab('player')}
+          onClick={() => onTabChange('player')}
           className={`flex-1 px-4 py-2 text-sm font-medium transition-colors ${
             activeTab === 'player'
               ? 'text-cba-orange border-b-2 border-cba-orange'
@@ -48,7 +52,12 @@ export function StatsTabs({ stats }) {
           <TeamStats homeTeam={stats.homeTeam} awayTeam={stats.awayTeam} />
         )}
         {activeTab === 'player' && (
-          <PlayerBox homeTeam={stats.homeTeam} awayTeam={stats.awayTeam} />
+          <PlayerBox 
+            homeTeam={stats.homeTeam} 
+            awayTeam={stats.awayTeam}
+            activeTab={activePlayerTeamTab}
+            onTabChange={onPlayerTeamTabChange}
+          />
         )}
       </div>
     </div>

@@ -17,6 +17,10 @@ export function MainPanel({
   stats,
   loading,
   error,
+  activeStatsTab,
+  onStatsTabChange,
+  activePlayerTeamTab,
+  onPlayerTeamTabChange,
 }) {
   const [panelWidth, setPanelWidth] = useState(() => {
     const savedWidth = localStorage.getItem('cba-panel-width');
@@ -118,7 +122,13 @@ export function MainPanel({
               status={selectedMatch.status}
             />
             {stats ? (
-              <StatsTabs stats={stats} />
+              <StatsTabs 
+                stats={stats}
+                activeTab={activeStatsTab}
+                onTabChange={onStatsTabChange}
+                activePlayerTeamTab={activePlayerTeamTab}
+                onPlayerTeamTabChange={onPlayerTeamTabChange}
+              />
             ) : (
               <div className="p-8 text-center text-cba-text-secondary">
                 <LoadingSpinner />

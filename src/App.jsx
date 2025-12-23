@@ -17,6 +17,8 @@ const queryClient = new QueryClient({
 
 const SHOW_FLOATING_BALL_KEY = 'cba-show-floating-ball';
 const SELECTED_MATCH_ID_KEY = 'cba-selected-match-id';
+const STATS_TAB_KEY = 'cba-stats-tab';
+const PLAYER_TEAM_TAB_KEY = 'cba-player-team-tab';
 
 function getStorageApi() {
   if (typeof chrome !== 'undefined' && chrome?.storage?.local) return chrome.storage.local;
@@ -42,6 +44,34 @@ function AppContent() {
     return matches.find((m) => m.id === selectedMatchId) || null;
   }, [matches, selectedMatchId]);
   const { stats, loading: statsLoading, error: statsError } = useLiveStats(selectedMatch?.id);
+
+  // 视图状态 - 提升到App层级以保持状态
+  const [activeStatsTab, setActiveStatsTab] = useState(() => {
+    try {
+      return localStorage.getItem(STATS_TAB_KEY) || 'team';
+    } catch {
+      return 'team';
+    }
+  });
+  const [activePlayerTeamTab, setActivePlayerTeamTab] = useState(() => {
+    try {
+      return localStorage.getItem(PLAYER_TEAM_TAB_KEY) || 'home';
+    } catch {
+      return 'home';
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(STATS_TAB_KEY, activeStatsTab);
+    } catch {}
+  }, [activeStatsTab]);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(PLAYER_TEAM_TAB_KEY, activePlayerTeamTab);
+    } catch {}
+  }, [activePlayerTeamTab]);
 
   useEffect(() => {
     let mounted = true;
@@ -135,6 +165,10 @@ function AppContent() {
           stats={stats}
           loading={loading || statsLoading}
           error={error || statsError}
+          activeStatsTab={activeStatsTab}
+          onStatsTabChange={setActiveStatsTab}
+          activePlayerTeamTab={activePlayerTeamTab}
+          onPlayerTeamTabChange={setActivePlayerTeamTab}
         />
       )}
     </>

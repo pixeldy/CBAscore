@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 /**
  * 球员统计表格组件
  * 根据模板html.player顺序显示所有统计数据
  */
-export function PlayerBox({ homeTeam, awayTeam }) {
-  const [activeTab, setActiveTab] = useState('home'); // 'home' | 'away' - 主队默认先显示
-
+export function PlayerBox({ homeTeam, awayTeam, activeTab, onTabChange }) {
   if (!homeTeam || !awayTeam) {
     return (
       <div className="p-8 text-center text-cba-text-secondary">
@@ -84,7 +82,7 @@ export function PlayerBox({ homeTeam, awayTeam }) {
       {/* 子Tab切换 - 主队在左边 */}
       <div className="flex border-b border-cba-border">
         <button
-          onClick={() => setActiveTab('home')}
+          onClick={() => onTabChange('home')}
           className={`flex-1 px-4 py-2 text-sm font-medium transition-colors ${
             activeTab === 'home'
               ? 'text-cba-orange border-b-2 border-cba-orange'
@@ -94,7 +92,7 @@ export function PlayerBox({ homeTeam, awayTeam }) {
           {homeTeam.teamInfo?.name || '主队'}
         </button>
         <button
-          onClick={() => setActiveTab('away')}
+          onClick={() => onTabChange('away')}
           className={`flex-1 px-4 py-2 text-sm font-medium transition-colors ${
             activeTab === 'away'
               ? 'text-cba-orange border-b-2 border-cba-orange'
