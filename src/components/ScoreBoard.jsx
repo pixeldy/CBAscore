@@ -3,27 +3,39 @@ import React, { useEffect, useState } from 'react';
 /**
  * 记分牌组件
  */
-export function ScoreBoard({ homeTeam, awayTeam, status }) {
-  const [homeScore, setHomeScore] = useState(homeTeam?.score || 0);
-  const [awayScore, setAwayScore] = useState(awayTeam?.score || 0);
+export function ScoreBoard({ homeTeam, awayTeam, homeTeamStats, awayTeamStats, status }) {
+  const getScore = (team, teamStats) => {
+    // 优先使用详细统计中的分数，因为它更新更及时
+    if (teamStats) {
+      if (teamStats.points?.value !== undefined) return parseInt(teamStats.points.value);
+      if (teamStats.score?.value !== undefined) return parseInt(teamStats.score.value);
+    }
+    // 降级使用列表中的分数
+    return team?.score !== undefined ? team.score : 0;
+  };
+
+  const [homeScore, setHomeScore] = useState(getScore(homeTeam, homeTeamStats));
+  const [awayScore, setAwayScore] = useState(getScore(awayTeam, awayTeamStats));
   const [homeScoreChanged, setHomeScoreChanged] = useState(false);
   const [awayScoreChanged, setAwayScoreChanged] = useState(false);
 
   useEffect(() => {
-    if (homeTeam?.score !== undefined && homeTeam.score !== homeScore) {
+    const newScore = getScore(homeTeam, homeTeamStats);
+    if (newScore !== homeScore) {
       setHomeScoreChanged(true);
-      setHomeScore(homeTeam.score);
+      setHomeScore(newScore);
       setTimeout(() => setHomeScoreChanged(false), 500);
     }
-  }, [homeTeam?.score]);
+  }, [homeTeam?.score, homeTeamStats]);
 
   useEffect(() => {
-    if (awayTeam?.score !== undefined && awayTeam.score !== awayScore) {
+    const newScore = getScore(awayTeam, awayTeamStats);
+    if (newScore !== awayScore) {
       setAwayScoreChanged(true);
-      setAwayScore(awayTeam.score);
+      setAwayScore(newScore);
       setTimeout(() => setAwayScoreChanged(false), 500);
     }
-  }, [awayTeam?.score]);
+  }, [awayTeam?.score, awayTeamStats]);
 
   const getStatusText = () => {
     if (status === '2') return 'Live';

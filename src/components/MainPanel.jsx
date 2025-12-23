@@ -113,6 +113,8 @@ export function MainPanel({
             <ScoreBoard
               homeTeam={selectedMatch.homeTeam}
               awayTeam={selectedMatch.awayTeam}
+              homeTeamStats={stats?.homeTeam?.stats}
+              awayTeamStats={stats?.awayTeam?.stats}
               status={selectedMatch.status}
             />
             {stats ? (
