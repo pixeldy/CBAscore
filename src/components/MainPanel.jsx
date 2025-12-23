@@ -119,6 +119,8 @@ export function MainPanel({
               awayTeam={selectedMatch.awayTeam}
               homeTeamStats={stats?.homeTeam?.stats}
               awayTeamStats={stats?.awayTeam?.stats}
+              homeTeamPlayers={stats?.homeTeam?.players}
+              awayTeamPlayers={stats?.awayTeam?.players}
               status={selectedMatch.status}
             />
             {stats ? (
